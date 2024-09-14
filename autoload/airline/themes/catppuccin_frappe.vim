@@ -38,19 +38,19 @@ let s:crust = "#232634"
 
 " Normal mode
 " (Dark)
-let s:N1 = [ s:mantle , s:blue , 59  , 149 ] " guifg guibg ctermfg ctermbg
-let s:N2 = [ s:blue , s:surface1 , 149 , 59  ] " guifg guibg ctermfg ctermbg
-let s:N3 = [ s:text , s:base , 145 , 16  ] " guifg guibg ctermfg ctermbg
+let s:N1 = [ s:mantle , s:mauve , 15  , 17 ] " guifg guibg ctermfg ctermbg
+let s:N2 = [ '#FFFFFF' , '#4682B4' , 153 , 17 ] " guifg guibg ctermfg ctermbg
+let s:N3 = [ '#FFFFFF' , '#4682B4' , 15  , 17 ] " guifg guibg ctermfg ctermbg
 
 " Insert mode
-let s:I1 = [ s:mantle , s:teal , 59  , 74  ] " guifg guibg ctermfg ctermbg
-let s:I2 = [ s:teal , s:mantle , 74  , 59  ] " guifg guibg ctermfg ctermbg
-let s:I3 = [ s:text , s:base , 145 , 16  ] " guifg guibg ctermfg ctermbg
+let s:I1 = [ s:mantle , '#4682B4' , 59  , 74  ] " guifg guibg ctermfg ctermbg
+let s:I2 = [ s:teal , '#4682B4' , 74  , 59  ] " guifg guibg ctermfg ctermbg
+let s:I3 = [ s:text , '#4682B4' , 145 , 16  ] " guifg guibg ctermfg ctermbg
 
 " Visual mode
-let s:V1 = [ s:mantle , s:mauve , 59  , 209 ] " guifg guibg ctermfg ctermbg
-let s:V2 = [ s:mauve , s:mantle , 209 , 59  ] " guifg guibg ctermfg ctermbg
-let s:V3 = [ s:text , s:base , 145 , 16  ] " guifg guibg ctermfg ctermbg
+let s:V1 = [ s:mantle , '#4682B4' , 59  , 209 ] " guifg guibg ctermfg ctermbg
+let s:V2 = [ s:mauve , '#4682B4' , 209 , 59  ] " guifg guibg ctermfg ctermbg
+let s:V3 = [ s:text , '#4682B4' , 145 , 16  ] " guifg guibg ctermfg ctermbg
 
 " Replace mode
 let s:RE = [ s:mantle , s:red , 59  , 203 ] " guifg guibg ctermfg ctermbg
@@ -78,3 +78,20 @@ let g:airline#themes#catppuccin_frappe#palette.inactive = airline#themes#generat
 let g:airline#themes#catppuccin_frappe#palette.normal.airline_warning = s:WR
 let g:airline#themes#catppuccin_frappe#palette.insert.airline_warning = s:WR
 let g:airline#themes#catppuccin_frappe#palette.visual.airline_warning = s:WR
+
+
+_vimrc
+
+Plug 'qindapao/vim-coloresque' 
+
+colorscheme photon
+
+" colorscheme Lightning
+
+" 如果是暗色主题使用下面两种颜色
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#2E2E2E ctermbg=15
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3C3C3C ctermbg=15
+" " 如果是亮色主题使用下面两种颜色
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#F0F0F0 ctermbg=15
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#F5F5F5 ctermbg=15
+
