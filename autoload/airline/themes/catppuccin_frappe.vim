@@ -79,19 +79,3 @@ let g:airline#themes#catppuccin_frappe#palette.normal.airline_warning = s:WR
 let g:airline#themes#catppuccin_frappe#palette.insert.airline_warning = s:WR
 let g:airline#themes#catppuccin_frappe#palette.visual.airline_warning = s:WR
 
-
-_vimrc
-
-Plug 'qindapao/vim-coloresque' 
-
-colorscheme photon
-
-" colorscheme Lightning
-
-" 如果是暗色主题使用下面两种颜色
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#2E2E2E ctermbg=15
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3C3C3C ctermbg=15
-" " 如果是亮色主题使用下面两种颜色
-" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#F0F0F0 ctermbg=15
-" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#F5F5F5 ctermbg=15
-
